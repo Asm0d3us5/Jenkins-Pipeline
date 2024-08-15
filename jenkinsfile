@@ -22,8 +22,7 @@ pipeline {
                 always {
                         mail to: '0maurosunda0@gmail.com',
                         subject: "Build ${currentBuild.fullDisplayName} - Test Results",
-                        body: "The test stage has completed with status: ${currentBuild.currentResult}",
-                    )
+                        body: "The test stage has completed with status: ${currentBuild.currentResult}",  
                 }
             }
         }
@@ -45,7 +44,6 @@ pipeline {
                         mail to: '0maurosunda0@gmail.com',
                         subject: "Build ${currentBuild.fullDisplayName} - Security Scan Results",
                         body: "The security scan stage has completed with status: ${currentBuild.currentResult}",
-                    )
                 }
             }
         }
