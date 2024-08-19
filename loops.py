@@ -12,7 +12,7 @@ def main():
         else:
             print(f"{number} is out of range. Please enter a number between 1 and 10.")
     except ValueError:
-        print(f"{user_input} is not a valid number. Please enter a valid integer.")
+        print(f"{user_input} is not a valid number. Please enter a valid integer")
 
     print("Goodbye!")
 
